@@ -1,0 +1,24 @@
+{
+    "events": [
+      {
+        "start_date": {
+          "year": "1800"
+        },
+        "text": {
+          "headline": "Museum Founded",
+          "text": "The museum was founded in 1800."
+        }
+      },
+      {
+        "start_date": {
+          "year": "1900"
+        },
+        "text": {
+          "headline": "First Major Exhibit",
+          "text": "The first major exhibit was introduced in 1900."
+        }
+      }
+    
+    ]
+  }
+  

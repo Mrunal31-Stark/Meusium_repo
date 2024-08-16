@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Museum Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://storage.googleapis.com/vrview/2.0/build/vrview.min.js"></script>
+    <script src="https://cdn.knightlab.com/libs/timeline3/latest/js/timeline.js"></script>
+<link rel="stylesheet" href="https://cdn.knightlab.com/libs/timeline3/latest/css/timeline.css">
+<link href='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.7/index.global.min.css' rel='stylesheet' />
+<script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.7/index.global.min.js'></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/panolens.js/0.12.0/panolens.min.js"></script>
+
+
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#exhibits">Exhibits</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#visit">Visit</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home">
+        <div class="hero-content">
+            <h1>Welcome to the Museum</h1>
+            <p>Explore the wonders of history, art, and culture.</p>
+        </div>
+    </section>
+
+    <!-- Exhibits Section -->
+    <!-- Virtual Tour Section -->
+
+    <!-- Exhibit Section -->
+<section id="exhibits">
+    <h2>Our Exhibits</h2>
+    <div class="exhibits-gallery">
+        <div class="exhibit-item" onclick="openModal('Exhibit 1', 'images/exibhit 1.jpg', 'Detailed description of Exhibit 1.')">
+            <img src="images/exibhit 1.jpg" alt="Exhibit 1">
+            <h3>Exhibit Title 1</h3>
+            <p>Brief description of Exhibit 1.</p>
+        </div>
+        <div class="exhibit-item" onclick="openModal('Exhibit 2', 'images/exibhit 2.jpg', 'Detailed description of Exhibit 2.')">
+            <img src="images/exibhit 2.jpg" alt="Exhibit 2">
+            <h3>Exhibit Title 2</h3>
+            <p>Brief description of Exhibit 2.</p>
+        </div>
+        <div class="exhibit-item" onclick="openModal('Exhibit 3', 'images/exibhit 3.jpg', 'Detailed description of Exhibit 3.')">
+            <img src="images/exibhit 3.jpg" alt="Exhibit 3">
+            <h3>Exhibit Title 3</h3>
+            <p>Brief description of Exhibit 3.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Modal Structure -->
+<div id="exhibitModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2 id="modalTitle"></h2>
+        <img id="modalImage" src="" alt="Exhibit Image">
+        <p id="modalDescription"></p>
+    </div>
+</div>
+
+   
+    <!-- About & History Section -->
+    <section id="about">
+        <h2>About the Museum</h2>
+        <p>Learn about our history, mission, and vision.</p>
+        <!-- Timeline Section -->
+
+    </section>
+
+    <section id="virtual-tour">
+        <h2>Virtual Tour</h2>
+        <div id="vrview"> </div>
+        </section>
+    <!-- Visitor Information Section -->
+    <section id="visit">
+        <h2>Plan Your Visit</h2>
+        <p>Find out everything you need to know before visiting us.</p>
+        <!-- Events Calendar Section -->
+    </section>
+    <section id="events">
+        <h2>Upcoming Events</h2>
+        <div id="calendar"></div>
+    </section>
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+    <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/66bed010146b7af4a43aff52/1i5clph4l';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+    <!--End of Tawk.to Script-->
+    <script src="react.js"></script>
+</body>
+</html>
